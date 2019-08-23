@@ -1,0 +1,29 @@
+-
+   Create a user as 'Backoffice user'
+-
+  !record {model: res.users, id: res_users_backoffice_user_test, view: False}:
+    company_id: base.main_company
+    name: Backoffice Test
+    login: backoffice
+    email: backofficetest@dataocean.com
+-
+  I added groups to Backoffice User.
+-
+  !record {model: res.users, id: res_users_backoffice_user_test}:
+    groups_id:
+      - eduocean_core.group_op_back_office
+-
+   Create an user as 'Teacher'
+-
+  !record {model: res.users, id: res_users_teacher_user_test, view: False}:
+    company_id: base.main_company
+    name: Teacher Test
+    login: teacher
+    email: teachertest@dataocean.com
+-
+  I added groups to Teacher User.
+-
+  !record {model: res.users, id: res_users_teacher_user_test}:
+    groups_id:
+      - eduocean_core.group_op_teacher
+

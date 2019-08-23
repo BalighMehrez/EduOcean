@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+
+        <template id="fav_ico" name="educat Icon" inherit_id="web.layout">
+            <xpath expr="//html/head/title" position="replace">
+                <title>EduOcean</title>
+            </xpath>
+        </template>
+
+        <template id="fav_ico" name="educat Icon" inherit_id="web.layout">
+            <xpath expr="//html/head/link[1]" position="replace">
+                <link rel="shortcut icon"
+                    href="/eduocean_core/static/src/img/eduocean_favicon.ico"
+                    type="image/x-icon" />
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
